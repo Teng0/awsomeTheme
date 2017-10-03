@@ -9,3 +9,7 @@ body {
 body {
 	padding: 20px;
 }
+.noMyClass{
+	background-color: #c3c3c3;
+	color: red;
+}

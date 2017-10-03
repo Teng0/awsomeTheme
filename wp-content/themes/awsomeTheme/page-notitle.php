@@ -1,16 +1,19 @@
-<?php  get_header(); ?>
+<?php  get_header(); 
+
+/* 
+	Template Name: Page No Tite
+*/
+?>
 
 <?php  if(have_posts()) : 
 		while(have_posts()) : 
 			the_post();  ?>
 
 				<div class="posts">
-		
+					<h1>THis is my Static Title</h1>
 					<?php the_post_thumbnail('thumbnail');?>
-	
-		<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
 		<div class="short"><?php the_content('');?></div>	
-		<a href="<?php the_permalink() ?>">იხილეთ სრულად</a>
+		
 		<br>
 		<small>Posted on : <?php  the_time("Y,F j")?>at <?php the_time("g:i,a")?> in  ,<?php the_category() ?></small>	
 	</div>

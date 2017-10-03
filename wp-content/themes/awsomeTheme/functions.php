@@ -7,7 +7,7 @@
 			wp_enqueue_script( 'awsomejs', get_stylesheet_directory_uri() . '/js/awsome.js',array(),'1.0.1',true);
 	}
 
-add_action( 'wp_enqueue_scripts', 'awsome_script_eqnuenue' );
+add_action( 'wp_enqueue_scripts','awsome_script_eqnuenue' );
 
 add_theme_support( 'post-thumbnails' );
 function awsome_theme_setup(){
